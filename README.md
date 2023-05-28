@@ -18,7 +18,7 @@ Syarat:
 1. Memasang bundle analyzer pada proyek submission.
 2. Gunakan teknik Code Splitting untuk memisahkan vendor code dari kode asli yang Anda tuliskan.
 ### 5. Pertahankan syarat yang ada pada submission sebelumnya
-Seperti responsibilitas tampilan, aksesibilitas pada website, appbar, footer dan sebagainya.
+Seperti penerapan PWA, responsibilitas tampilan,  aksesibilitas pada website dan sebagainya.
 
 Install :
 ```
