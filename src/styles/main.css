@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  background-color: #ffd93d;
+  color: #000;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 150px;
+}
+
+.like {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd93d;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 44px;
+  color: white;
+  cursor: pointer;
+}
+
+.app-bar {
+  padding: 8px 16px;
+  background-color: #ffd93d;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+ 
+.app-bar .app-bar__menu {
+  display: flex;
+  align-items: center;
+}
+ 
+.app-bar .app-bar__menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  padding: 14px;
+  cursor: pointer;
+}
+ 
+.app-bar .app-bar__brand {
+  display: flex;
+  align-items: center;
+}
+ 
+.app-bar .app-bar__brand h1 {
+  color: #212121;
+  font-size: 22px;
+  user-select: none;
+}
+ 
+.app-bar .app-bar__navigation {
+  position: absolute;
+  top: 50px;
+  left: -180px;
+  width: 150px;
+  transition: all 0.3s;
+  padding: 14px;
+  background-color: #ffd93d;
+  overflow: hidden;
+  list-style: none;
+}
+ 
+.app-bar .app-bar__navigation.open {
+  left: 0;
+}
+ 
+.app-bar .app-bar__navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 12px;
+  margin-bottom: 5px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 440px;
+  text-align: center;
+  background-position: center;
+  background-color: black;
+}
+
+.hero-brand {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 35px;
+  font-style: italic;
+  text-shadow: 3px 2px black;
+  padding-top: 70px;
+}
+
+.hero-desc {
+  color: #fff;
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 400;
+  text-shadow: 3px 2px black;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.explore-list {
+  width: 100%;
+}
+
+.restaurants {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.explore-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+
+.restaurants {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.list-item {
+  padding: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 100%;
+}
+
+.list-city a {
+  margin-top: 10px;
+  font-size: 30px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+}
+
+.list-city a:hover {
+  text-decoration: underline;
+  color: #ffd93d;
+}
+
+.list-name {
+  font-size: 15px;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.detail-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 100%;
+  margin-top: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+.detail-name {
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+.detail-categories {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 28px;
+}
+
+.detail-thumb {
+  width: 85%;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.detail-card2 {
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.detail-city {
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+.detail-address {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.detail-desc {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.detail-menus {
+  list-style: none;
+}
+
+.detail-foods h5 {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.detail-drinks h5 {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.detail-review h6 {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #4f200d;
+  text-align: center;
+  width: 100%;
+  color: white;
+  padding: 2.1em;
+  line-height: 1.6;
+}
+
+.restaurants-not-found {
+  text-align: center;
+}

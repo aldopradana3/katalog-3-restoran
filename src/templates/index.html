@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Temukan keberagaman masakan nusanatar di Janji Nusantara.">
+    <meta name="theme-color" content="#ffd93d"/>
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./favicon.png">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <title>Janji Nusantara | Aplikasi Restoran</title>
+    <style>
+      @media screen and (max-width: 600px) {
+        .hero {
+          background-image: url(hero-image_4-small.jpg);
+        }
+      }
+
+      @media screen and (min-width: 601px) {
+        .hero {
+          background-image: url(hero-image_4-large.jpg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <a href="#content" class="skip-link">Menuju ke konten</a>
+
+    <!--Navigation Bar-->
+    <header class="app-bar">
+      <div class="app-bar__menu">
+        <button id="hamburgerButton">☰</button>
+      </div>
+      <div class="app-bar__brand">
+        <h1>Janji Nusantara</h1>
+      </div>
+      <nav id="navigationDrawer" class="app-bar__navigation">
+        <ul style="list-style: none;">
+          <li><a href="/">Home</a></li>
+          <li><a href="#/favorite">Favorite</a></li>
+          <li><a target="_blank" href="https://www.instagram.com/mbkm_aldopradana/" rel=”noopener noreferrer”>About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--End Navigation Bar-->
+    
+    <!--Jumbotron Element-->
+    <div class="hero">
+      <div class="hero-brand">
+        <h1 class="hero-title">Persatuan yang utuh melalui kuliner,</h1>
+        <p class="hero-desc">Temukan keberagamannya disini.</p>
+      </div>
+    </div>
+    <!--End Jumbotron Element-->
+    
+    <section id="content" tabindex="0">
+      <main id="mainContent"></main>
+    </section>
+    
+    <!--Footer-->
+    <footer>
+      <p>Copyright © 2023 - Janji Nusantara</p>
+    </footer>
+    <!--End Daftar Restoran-->
+  </body>
+</html>
